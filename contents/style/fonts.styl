@@ -3,8 +3,11 @@
  * -------------------------
  */
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900')
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -12,17 +15,63 @@ h2 {
 }
 
 h1, h2, h3, h4 {
-  font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  font-family: "Montserrat",Geneva,Verdana,sans-serif;
 }
+
 
 .hero h1 {
   text-align: center;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #fff;
 }
+
+@media (min-width: 800px)
+  .hero h1 {
+  font-size: 48px;
+  line-height: 48px;
+  }
+
+.hero h2 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  border-bottom: none;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #bbeeff;
+}
+
+@media (min-width: 800px)
+  .hero h2 {
+  font-size: 26px;
+  line-height: 26px;
+  }
 
 .hero .summary p {
   font-size: 20px;
   line-height: 24px;
-  font-family: 'Vollkorn'
+  font-family: 'Source Sans Pro'
+  color: #fff;
 }
+
+.hero .summary a {
+  color: #bbeeff;
+}
+
+.intro-text {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: 'Source Sans Pro'
+  color: #fff;
+}
+
+@media (min-width: 800px)
+  .intro-text {
+    margin-top: 60px;
+    font-size: 30px;
+    line-height: 36px;
+  }
