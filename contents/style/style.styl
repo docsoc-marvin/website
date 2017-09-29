@@ -1,15 +1,10 @@
-@import "layout"
-@import "type"
-@import "fonts"
-@import "utils"
-
 *, *:before, *:after
   box-sizing border-box
 
 html
   background-color #F3F5F7
   color #222
-  font-family "Helvetica Neue", Helvetica, sans-serif
+  font-family 'Source Sans Pro', sans-serif
   -webkit-font-smoothing antialiased
 
 a
@@ -34,7 +29,7 @@ img
   margin-bottom 0
 
 h1, h2, h3, h4, h5, h6
-  font-family 'Helvetica', sans-serif
+  font-family 'Source Sans Pro', sans-serif
 
 h1
   margin-top 23px
@@ -82,15 +77,20 @@ blockquote
     margin 1em 0
     padding 0
 
-@import "modules/header"
-@import "modules/footer"
-@import "modules/highlight"
-@import "modules/pagination"
-@import "modules/post"
-@import "modules/about"
-@import "modules/archive"
-@import "modules/sponsors"
-@import "modules/recent-article"
-@import "modules/event"
-@import "modules/social"
-@import "modules/site"
+@require "layout"
+@require "type"
+@require "fonts"
+@require "utils"
+
+@require "modules/header"
+@require "modules/footer"
+@require "modules/highlight"
+@require "modules/pagination"
+@require "modules/post"
+@require "modules/about"
+@require "modules/archive"
+@require "modules/sponsors"
+@require "modules/recent-article"
+@require "modules/event"
+@require "modules/social"
+@require "modules/site"
