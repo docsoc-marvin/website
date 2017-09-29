@@ -2,7 +2,7 @@ extends page
 
 block post
   .hero
-    h1 Imperial Department of Computing Society
+    h1 Imperial Department of Computing&nbsp;Society
     .summary
       p
         | We run multiple events throughout the year, including several coding challenges 
@@ -12,10 +12,6 @@ block post
         | We invite notable tech speakers, connect our students with different opportunities  
         | and run a number of social events to bring together the community of students who are interested in Computing.
         | &nbsp;
-      p.sponsor-attention
-        | We are currently looking for 2017/18 sponsors at Bronze and Silver level.
-        br
-        | Email us at #[a(href="mailto:docsoc@imperial.ac.uk") docsoc@imperial.ac.uk] if you're interested.
 
   .cf
     include partials/upcoming-events
@@ -35,8 +31,10 @@ block post
 
   h2 Our Sponsors
   .our-sponsors
-    each sponsor in contents.data['sponsors.json'].metadata
-      .sponsor
-        a(href=sponsor.url)
-          img(src=sponsor.logo
-              title=sponsor.name).sponsor-image
+    each tier in contents.data['sponsors.json'].metadata
+      .sponsor-row
+        each sponsor in tier.sponsors
+          .sponsor
+            a(href=sponsor.url)
+              img(src=sponsor.logo
+                  title=sponsor.name).sponsor-image
