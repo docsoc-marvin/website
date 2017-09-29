@@ -5,22 +5,24 @@ block post
   p DoCSoc offers a lot to our students but this wouldn't be possible without the support we receive from industry.
   p In return, companies gain access to over 1000 active Computing, JMC and EIE students through a variety of events, sessions, emails, job advertisements and more.
   p We only hold events for speakers or companies who support us directly and we always welcome new partnerships and opportunities.
+  p.sponsor-attention
+    | We are currently looking for 2017/18 sponsors at all tiers.
+    br
+    | Email us at #[a(href="mailto:docsoc@imperial.ac.uk") docsoc@imperial.ac.uk] if you're interested.
 
   h2 Current Sponsors
 
   .sponsor-table
-    each tier in contents.data['sponsors.json'].metadata
-      .tier
-        .tier-title
-          img(src=tier.icon)
-          h3.inline #{tier.title}
-        .tier-sponsors
-          each sponsor in tier.sponsors
-            a(href=sponsor.url)
-              figure
-                img(src=sponsor.logo)
-                figcaption
-                  h4 #{sponsor.name}
+    each sponsor in contents.data['sponsors.json'].metadata
+      .sponsor-row
+        .sponsor-image-cell
+          a(href=sponsor.url)
+            img(src=sponsor.logo).sponsor-image
+        .sponsor-info-cell
+          .sponsor-name
+            a(href=sponsor.url) #{sponsor.name}
+          .sponsor-info
+            h2 #{sponsor.info}
 
     .clearboth
 
