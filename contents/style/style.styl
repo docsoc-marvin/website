@@ -1,8 +1,3 @@
-@import "layout"
-@import "type"
-@import "fonts"
-@import "utils"
-
 *, *:before, *:after
   box-sizing border-box
 
@@ -82,15 +77,20 @@ blockquote
     margin 1em 0
     padding 0
 
-@import "modules/header"
-@import "modules/footer"
-@import "modules/highlight"
-@import "modules/pagination"
-@import "modules/post"
-@import "modules/about"
-@import "modules/archive"
-@import "modules/sponsors"
-@import "modules/recent-article"
-@import "modules/event"
-@import "modules/social"
-@import "modules/site"
+@require "layout"
+@require "type"
+@require "fonts"
+@require "utils"
+
+@require "modules/header"
+@require "modules/footer"
+@require "modules/highlight"
+@require "modules/pagination"
+@require "modules/post"
+@require "modules/about"
+@require "modules/archive"
+@require "modules/sponsors"
+@require "modules/recent-article"
+@require "modules/event"
+@require "modules/social"
+@require "modules/site"
