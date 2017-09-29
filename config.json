@@ -25,6 +25,11 @@
     "index_articles": 3,
     "menu": [
       {
+        "name": "What's On?",
+        "description": "",
+        "url": "/"
+      },
+      {
         "name": "Sponsors",
         "description": "",
         "url": "/sponsors/"
@@ -38,12 +43,6 @@
         "name": "About",
         "description": "",
         "url": "/about/"
-      }
-      ,
-      {
-        "name": "Software Foundation",
-        "description": "",
-        "url": "https://sf.docsoc.co.uk"
       }
     ],
     "archiveUrl": "/archive/",
