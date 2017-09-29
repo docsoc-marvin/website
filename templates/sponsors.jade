@@ -13,16 +13,18 @@ block post
   h2 Current Sponsors
 
   .sponsor-table
-    each sponsor in contents.data['sponsors.json'].metadata
-      .sponsor-row
-        .sponsor-image-cell
-          a(href=sponsor.url)
-            img(src=sponsor.logo).sponsor-image
-        .sponsor-info-cell
-          .sponsor-name
-            a(href=sponsor.url) #{sponsor.name}
-          .sponsor-info
-            h2 #{sponsor.info}
+    each tier in contents.data['sponsors.json'].metadata
+      .tier
+        .tier-title
+          img(src=tier.icon)
+          h3.inline #{tier.title}
+        .tier-sponsors
+          each sponsor in tier.sponsors
+            a(href=sponsor.url)
+              figure
+                img(src=sponsor.logo)
+                figcaption
+                  h4 #{sponsor.name}
 
     .clearboth
 
