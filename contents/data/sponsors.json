@@ -26,7 +26,7 @@
       },
       {
         "name": "G-Research",
-        "url": "http://www.gresearch.co.uk",
+        "url": "https://www.gresearch.co.uk",
         "logo": "/img/sponsors/g_research_logo.png"
       },
       {
@@ -36,7 +36,7 @@
       },
       {
         "name": "NextJump",
-        "url": "http://www.nextjump.com",
+        "url": "https://www.nextjump.com",
         "logo": "/img/sponsors/next_jump_logo.png"
       },
       {
@@ -99,7 +99,7 @@
       },
       {
         "name": "J.P. Morgan",
-        "url": "https://www.blackrock.com/",
+        "url": "https://www.jpmorgan.com/",
         "logo": "/img/sponsors/jpmorgan_logo.png"
       },
       {
@@ -114,7 +114,7 @@
       },
       {
         "name": "Capital One",
-        "url": "http://www.capitalone.co.uk",
+        "url": "https://www.capitalone.co.uk",
         "logo": "/img/sponsors/capital_one_logo.png"
       }
     ]
