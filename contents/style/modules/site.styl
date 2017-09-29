@@ -46,8 +46,15 @@
 
 .our-sponsors {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column
+
+  .sponsor-row {
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+    margin-bottom: 15px
+  }
 }
 
 .sponsor-image-row {
@@ -64,20 +71,18 @@
 }
 
 .sponsor {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  min-height: 50px;
-  min-width: 140px;
+  margin: 10px 20px
+  display: flex
 
   a {
     margin: auto;
     display: block;
     width: 140px;
+    text-align: center;
   }
 
   img {
-    width: 140px;
+    max-width: 140px;
     max-height: 50px;
     vertical-align: middle;
   }

@@ -35,8 +35,10 @@ block post
 
   h2 Our Sponsors
   .our-sponsors
-    each sponsor in contents.data['sponsors.json'].metadata
-      .sponsor
-        a(href=sponsor.url)
-          img(src=sponsor.logo
-              title=sponsor.name).sponsor-image
+    each tier in contents.data['sponsors.json'].metadata
+      .sponsor-row
+        each sponsor in tier.sponsors
+          .sponsor
+            a(href=sponsor.url)
+              img(src=sponsor.logo
+                  title=sponsor.name).sponsor-image
