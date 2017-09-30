@@ -5,4 +5,5 @@ location: Metric, Imperial College Union
 image: banner.png
 sponsor_logo: /img/docsoc-logo-blue.png
 url: https://www.facebook.com/events/857222977758027
+unpublished: true
 ---
