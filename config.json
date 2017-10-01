@@ -38,8 +38,7 @@
         "name": "About",
         "description": "",
         "url": "/about/"
-      }
-      ,
+      },
       {
         "name": "Software Foundation",
         "description": "",
@@ -48,9 +47,18 @@
     ],
     "archiveUrl": "/archive/",
     "committee": [
-      "Maurice Yap", "Tom Bower", "Levente Kurusa", "Nik Vangerow",
-      "Rachel Mekhtieva Lee", "Yoon Kim", "Diana Avram", "Alessandro Bonardi",
-      "Jack Pordi", "Rohan Pritchard", "Inara Ramji", "Elliot Greenwood",
+      "Maurice Yap",
+      "Tom Bower",
+      "Levente Kurusa",
+      "Nik Vangerow",
+      "Rachel Mekhtieva Lee",
+      "Yoon Kim",
+      "Diana Avram",
+      "Alessandro Bonardi",
+      "Jack Pordi",
+      "Rohan Pritchard",
+      "Inara Ramji",
+      "Elliot Greenwood",
       "Uno Perwironegoro"
     ]
   },
@@ -86,6 +94,10 @@
     "freshers2017": {
       "title": "Freshers 2017",
       "target": "https://www.facebook.com/groups/imperialcomputing2017/"
+    },
+    "AA": {
+      "title": "AA",
+      "target": "http://localhost:8000/"
     }
   }
 }
